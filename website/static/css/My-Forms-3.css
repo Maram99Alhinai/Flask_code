@@ -1,0 +1,279 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 570px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 495px;
+  height: 114px;
+  margin: -38px 213px 0 auto;
+}
+
+.u-section-1 .u-group-1 {
+  height: auto;
+  background-image: none;
+  min-height: 394px;
+  margin-top: -14px;
+  margin-bottom: 0;
+}
+
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-image-2 {
+  width: 83px;
+  height: 83px;
+  margin: 12px auto 0;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  font-weight: normal;
+  font-size: 1rem;
+  letter-spacing: normal;
+  margin: 15px auto 0;
+  padding: 9px 53px 11px 52px;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 28px;
+  height: 28px;
+  margin: -37px 438px 0 auto;
+  padding: 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 72px;
+  margin: -481px 864px 0 0;
+}
+
+.u-section-1 .u-form-group-1 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-1 {
+  font-size: 1rem;
+}
+
+.u-section-1 .u-input-1 {
+  font-size: 2.25rem;
+}
+
+.u-section-1 .u-btn-2 {
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-image-1 {
+    height: 166px;
+    margin-right: 181px;
+  }
+
+  .u-section-1 .u-group-1 {
+    margin-top: -2px;
+    height: auto;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 11px;
+  }
+
+  .u-section-1 .u-image-2 {
+    margin-top: 7px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 20px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-right: 337px;
+  }
+
+  .u-section-1 .u-form-1 {
+    height: 92px;
+    margin-top: -484px;
+    margin-right: 676px;
+    margin-left: -12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-image-1 {
+    height: 113px;
+    width: 820px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
+  .u-section-1 .u-group-1 {
+    margin-top: 104px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 8px;
+  }
+
+  .u-section-1 .u-image-2 {
+    margin-top: 10px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    margin-right: 222px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-top: -35px;
+    margin-right: 238px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 276px;
+    margin-right: 566px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-image-1 {
+    height: 74px;
+    width: 540px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-image-2 {
+    margin-top: 13px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-right: 82px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-right: 188px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-top: 20px;
+    margin-right: 476px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 521px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 70px;
+    width: 440px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
+  .u-section-1 .u-group-1 {
+    margin-top: 77px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+  }
+
+  .u-section-1 .u-image-2 {
+    width: 76px;
+    height: 76px;
+    margin-left: 117px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 33px;
+    margin-right: auto;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-right: 51px;
+  }
+
+  .u-section-1 .u-form-1 {
+    height: 67px;
+    margin-top: -463px;
+    margin-right: 77px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-input-1 {
+    font-size: 1.25rem;
+    height: 49px;
+  }
+}
+
+
+label.form-label {
+  color: lightblue;
+}
+
+input.inputraduis,select#questionType {
+  border-radius: 39px;
+}
+.section {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+button.btn.view-form.me-2{
+  background-color: darkblue;
+  color: #ffffff;
+  border-radius: 20px;
+
+
+}
+button.btn.save{
+  background-color: lightgreen;
+  color: darkblue;
+  border-radius: 20px;
+}
+i.far.fa-check-square,i.far.fa-copy,i.far.fa-trash-alt {
+  color: lightblue;
+}
+button.btn.add{
+  background-color: darkblue;
+  color: #ffffff;
+  border-radius: 20px;
+  
+}
+.form-check-input[type=checkbox] {
+  border-radius: 50px;
+}
+.form-check-input:checked {
+  background-color: pink;
+  border-color: #ffffff;
+  border-radius: 50px;
+}
+.form-check-label {
+  border: none;
+}
+.form-group:nth-child(2) .form-check-label {
+  border: none;
+}
+i.fa.fas.fa-plus-circle {
+  color: pink;
+}
+.container.content {
+  border: 1px solid #FFF;
+  border-radius: 17px;
+  padding-bottom: 19px;
+  background-color: #FFF;
+}

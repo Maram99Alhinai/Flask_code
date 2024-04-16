@@ -1,0 +1,82 @@
+@font-face{
+  font-family: Sarabun;
+  src: url(./fonts/Sarabun-Regular.ttf); /* IE9 Compat Modes */
+ 
+}
+.xxx{
+  font-family: Sarabun;
+  font-weight: bolder;
+}
+button, input, optgroup, select, textarea {
+  background: bottom;
+  border: none;
+}
+.mh-100vh {
+  min-height: 100vh;
+}
+.link-url{
+  color: #444FB6;
+  padding-left: 5px;
+}
+.bg-img{
+  background-size: cover;
+  background-position: center center;
+}
+
+#login-block {
+  /* -webkit-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.4); */
+  z-index: 2;
+}
+img.google {
+  width: 27px;
+}
+
+.btn-sign-in {
+  background: #444FB6;
+  color: wheat;
+}
+.btn-google {
+  background: white;
+  border: 1px solid #444FB6;
+  color: #444FB6;
+}
+@media (max-width: 991.98px) {
+  #login-block {
+    opacity: .95;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .b-footer{
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #bg-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-lg-75 {
+    width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .rounded-lg-0 {
+    border-radius: 0 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .w-xl-50 {
+    width: 50%;
+  }
+}
+

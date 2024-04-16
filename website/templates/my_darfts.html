@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="My Forms​">
+  <meta name="description" content="">
+  <title>My Drafts</title>
+  <link rel="stylesheet" href="static/css/library-css/my-forms2.css" media="screen">
+  <link rel="stylesheet" href="static/css/my-drafts.css" media="screen">
+  <!-- <link rel="stylesheet" href="static/css/library-css/my-drafts.css" media="screen">
+  <link rel="stylesheet" href="static/css/my-drafts.css" media="screen"> -->
+  <script class="u-script" type="text/javascript" src="static/js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="static/js/page.js" defer=""></script>
+  <meta name="generator" content="Nicepage 5.20.7, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="My Forms 2">
+  <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body data-path-to-root="./" data-include-products="false" class="u-body u-stick-footer u-xl-mode" data-lang="en">
+  <div style="background-color: #f8f8f8;">
+    <header class="u-clearfix u-header u-white u-header" id="sec-3136">
+      <div class="u-clearfix u-sheet u-sheet-1"><span
+          class="u-border-1 u-border-grey-5 u-file-icon u-grey-5 u-icon u-icon-circle u-icon-1"><img 
+            src="{{ url_for('static', filename='images/view/3106773-55a68393.png') }}" alt=""></span>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="SM">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+              href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+              </svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1">
+              <li class="u-nav-item"><a
+                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ url_for('views.welcome') }}"
+                  style="padding: 10px 24px;">Home</a>
+              </li>
+              <li class="u-nav-item"><a
+                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ url_for('views.my_forms') }}"
+                  style="padding: 10px 23px 10px 24px;">My Forms</a>
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link"  href="{{ url_for('views.welcome') }}">Home</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('views.my_forms') }}">My Forms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="{{ url_for('static', filename='images/view/Logo1.svg') }}"
+          alt="" data-image-width="86" data-image-height="34">
+        <div class="nav-container">
+          <ul class="nav-items">
+            <!-- Navigation -->
+            <!-- Dropdown menu -->
+            <li class="nav-item nav-item-dropdown ">
+              <a class="dropdown-trigger u-text-black" href="#"
+              style="text-decoration: none; "
+              >{{ user_name }}
+                <p class="icon2"> &#11206;</p>
+              </a>
+              <ul class="dropdown-menu rounded-4 ">
+                <li class="dropdown-menu-item u-text-black">
+                  <a href="{{ url_for('auth.my_profile') }}" class="u-text-black" style="text-decoration: none;">My Profile</a>
+                  <hr class="">
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="{{ url_for('auth.logout') }}" class="u-text-black" style="text-decoration: none;">Log out</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+  <section class="u-clearfix u-grey-10 u-section-1" id="sec-e8f7">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="title3">
+        <h2 class="u-text u-text-default-xl u-text-black-40 u-text-2">My Drafts<span style="font-weight: 700;"></span>
+        </h2>
+
+        <div class="test">
+          <div class="d-flex flex-column mb-2 button-form">
+            <div class="p-2">
+              <a href="{{ url_for('views.my_form3') }}"
+                class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-radius-50 u-btn-1">Create New
+                form</a>
+            </div>
+            <div class="p-2">
+
+              {% if draft_stat %}
+              <a href="{{ url_for('views.my_darfts') }}"
+                class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-4 u-radius-20 u-btn-2 draft ">Drafts<span
+                  style="font-weight: 400;"></span>
+              </a>
+              {% else %}
+
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img class="custom-expanded u-image u-image-default u-image-1" src="static/images/my-drafts/OBJECTS2.svg" alt=""
+        data-image-width="495" data-image-height="200">
+      <div 
+        class=" u-align-center-xs u-border-2 u-border-grey-10 u-container-style u-expanded-width u-group u-radius-40 u-shape-round u-white u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          {% if not Draft_forms %}
+          <!-- <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-2"
+            src="static/images/my-drafts/search1.svg" alt="" data-image-width="93" data-image-height="93"> -->
+          <p class="u-text u-text-grey-25 u-text-1"> There is one step left before you start data collecting journey.
+          </p>
+          <button href="{{ url_for('views.my_form3') }}"
+            class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-radius-50 u-btn-1">Create New
+            form</button>
+          {% else %}
+          {% for form in Draft_forms %}
+          {% set template_num = loop.index0 % 4 + 1 %}
+          {% set form_data = form %}
+          {% include 'cards/card_template_' + template_num|string + '.html' %}
+          {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <section>
+    <!-- Modal -->
+    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true" style="--bs-modal-width: 821px;top: 122px;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="border: none; display: block;">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body ">
+            <div class="d-flex">
+              <div class="p-2 flex-grow-1">
+                <div>
+                  <i class="fa-thin fa-user"></i>
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Children Event Form <label>44</label></h1>
+                  <i class="fa-thin fa-share " style="color: #b1b4b9;"></i>
+                </div>
+                <div class="input-group mb-3">
+
+                  <input type="text" id='share-link-input' class="form-control"
+                    placeholder="https://formcreator.com/hgTerSJYvfdhy" aria-label="Recipient's username"
+                    aria-describedby="button-addon2" style="border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;">
+                  <button class="btn " type="button" id="button-addon2">Copy link</button>
+                </div>
+              </div>
+              <div class="p-2">
+                <div class="rounded-social-buttons">
+                  <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i
+                      class="fab fa-twitter"></i></a>
+                  <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i
+                      class="fab fa-instagram"></i></a>
+                  <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i
+                      class="fab fa-facebook-f"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="input-group mb-1" style="font-family: auto;">
+              <h3 class="modal-title fs-5" style="font-family: auto;" id="staticBackdropLabel">Email this form to:</h3>
+            </div>
+            <form id="form" class="topBefore ">
+              <div id="email-input-container">
+                <input type="text" class="form-control " id="email" placeholder="Email" aria-label="Email"
+                  aria-describedby="button-addon2">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer" style="border: none;display: block;margin-left: 10px;">
+            <button type="button" class="btn d-flex justify-content-start" style="background: #444FB6;color: white;"
+              data-bs-dismiss="modal">Send Emails</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #F8F8F8;">
+    <footer class="u-align-center u-border-2 u-border-custom-color-4 u-clearfix u-custom-color-4 u-footer u-footer"
+      id="sec-d10e">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-white u-text-1"> All copyrights @Smart Developer</p>
+      </div>
+    </footer>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const emailInput = document.getElementById('email');
+      const emailInputContainer = document.getElementById('email-input-container');
+
+      emailInput.addEventListener('keydown', function (event) {
+        if (event.key === ' ' || event.key === 'Spacebar') {
+          event.preventDefault();
+          const currentValue = emailInput.value.trim();
+          if (currentValue !== '') {
+            // Create a new email item with a remove button
+            const emailItem = document.createElement('span');
+            emailItem.className = 'email-item';
+            emailItem.textContent = currentValue;
+
+            const removeButton = document.createElement('span');
+            removeButton.className = 'remove-icon';
+            removeButton.innerHTML = 'x';
+
+            removeButton.addEventListener('click', function () {
+              emailInputContainer.removeChild(emailItem);
+            });
+
+            emailItem.appendChild(removeButton);
+            emailInputContainer.appendChild(emailItem);
+
+            emailInput.value = ''; // Clear the input field
+          }
+        }
+      });
+    });
+
+
+// Populate the share popup 
+$(document).ready(function() {
+  $('.u-icon-3').on('click', function() {
+    var formId = $(this).data('form-id');
+    var shareLink = $(this).data('share-link');
+    var formTitle = $(this).data('form-title');
+    var respoNum = $(this).data('respo-num');
+    $('#share-link-input').val(shareLink);
+    $('#staticBackdropLabel').text(formTitle + ' ' + respoNum);
+    $('.mb-3').attr('id', formId);
+  });
+});
+
+    // send emails to the backend 
+    // send emails to the backend 
+    $('button[data-bs-dismiss="modal"]').on('click', function () {
+      // Extract email addresses
+      var emails = [];
+      $('.email-item').each(function () {
+        emails.push($(this).text().trim());
+      });
+
+      var formId = $('.u-icon-3').data('form-id');
+
+      // Print the value of the data-form-id attribute
+      console.log('The form ID:', formId);
+
+      // Send emails to the backend
+      $.ajax({
+        url: '/my_darfts',
+        type: 'POST',
+        contentType: 'application/json', // Add this line
+        data: JSON.stringify({
+          'emails': emails,
+          'formId': formId
+        }),
+        success: function (response) {
+          // Handle the response from the backend
+          console.log(response);
+        }
+      });
+    });
+
+  </script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+  <script>
+    // Delete function
+    function confirmDelete(formId, deleteUrl) {
+      if (confirm("Are you sure you want to delete this form?")) {
+        $.ajax({
+          url: deleteUrl,
+          type: 'POST',
+          success: function (response) {
+            if (response.result == 'success') {
+              // Remove the card from the DOM
+              $('#' + formId).remove();
+            }
+          }
+        });
+      }
+    }
+
+    function copyLink() {
+      // Get the input field
+      var copyText = document.getElementById("share-link-input");
+
+      // Select the text in the input field
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the text to the clipboard
+      document.execCommand("copy");
+
+      // Deselect the text
+      copyText.setSelectionRange(0, 0);
+
+      // Optionally, you can provide some feedback to the user
+      alert("Link copied: " + copyText.value);
+    }
+
+    /// For social media post 
+    /// For social media post 
+$(document).ready(function() {
+  $('.social-button').on('click', function(e) {
+    e.preventDefault(); // Prevent the default action (i.e., navigating to the social media site)
+
+    var formId = $('.mb-3').attr('id');
+    var $button = $('div#' + formId + ' .u-icon-3');
+
+    var formTitle = $button.data('form-title');
+    var respoNum = $button.data('respo-num');
+    var shareLink = $button.data('share-link');
+
+        var share_data = {
+          formTitle: formTitle,
+          respoNum: respoNum,
+          shareLink: shareLink,
+          formId: formId
+        };
+        // Print the value of the data-form-id attribute
+        console.log('The form ID:', share_data);
+        $.ajax({
+          url: '/my_forms/social', // Replace with your Flask route
+          type: 'POST',
+          contentType: 'application/json',
+          data: JSON.stringify(share_data),
+          dataType: 'json',
+          success: function (response) {
+            // Update the social media links with the new URLs
+            $('.twitter').attr('href', response.twitter);
+            $('.facebook').attr('href', response.facebook);
+            $('.instagram').attr('href', response.instagram);
+
+            // Navigate to the social media site
+            window.location.href = $(e.target).closest('a').attr('href');
+          },
+          error: function (error) {
+            // Handle any errors
+          }
+        });
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

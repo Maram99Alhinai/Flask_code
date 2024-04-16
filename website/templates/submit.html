@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/css/library-css/submit.css" media="screen">
+    <link rel="stylesheet" href="static/css/submit.css" media="screen">
+    <script class="u-script" type="text/javascript" src="static/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="static/js/page.js" defer=""></script>
+    <link rel="icon" type="image/x-icon" href="static/images/Logo1.svg">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+    <header class="u-clearfix u-header u-header" id="sec-a1c2">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="#">
+                        <svg class="u-svg-link" viewBox="0 0 24 24">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+                        </svg>
+                        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect y="1" width="16" height="2"></rect>
+                                <rect y="7" width="16" height="2"></rect>
+                                <rect y="13" width="16" height="2"></rect>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container">
+                    <ul class="u-nav u-unstyled u-nav-1">
+                        <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base"
+                                href="{{ url_for('views.welcome') }}" style="padding: 10px 20px;">Home</a>
+                        </li>
+                        <!-- <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base"
+                                href="" style="padding: 10px 20px;">My Forms</a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <div class="u-menu-close"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('views.welcome') }}">Home</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="">My Forms</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+            </nav>
+            <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
+                src="static/images/submit/Logo1.svg" alt="" data-image-width="86" data-image-height="34">
+            <!-- <a href="https://nicepage.com/web-design"
+        class="u-btn u-button-style u-none u-text-palette-1-base u-btn-1">Signin<span
+          class="u-icon u-text-white u-icon-1"><svg class="u-svg-content" viewBox="0 0 490.677 490.677" x="0px" y="0px"
+            style="width: 1em; height: 1em;">
+            <path
+              d="M489.272,37.339c-1.92-3.307-5.44-5.333-9.259-5.333H10.68c-3.819,0-7.339,2.027-9.259,5.333    c-1.899,3.307-1.899,7.36,0.021,10.667l234.667,405.333c1.899,3.307,5.419,5.333,9.237,5.333s7.339-2.027,9.237-5.333 L489.251,48.005C491.149,44.72,491.149,40.645,489.272,37.339z">
+            </path>
+          </svg></span>
+      </a> -->
+            <!-- <span class="u-file-icon u-grey-5 u-icon u-icon-circle u-icon-2"><img
+                    src="static/images/submit/3106773-55a68393.png" alt=""></span> -->
+            <!-- <div class="nav-container">
+                <ul class="nav-items">
+                    <li class="nav-item nav-item-dropdown">
+                        <a class="dropdown-trigger" href="#">{{ user_name }}
+                          <p class="icon2"> &#11206;</p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item">
+                                <a href="{{ url_for('auth.my_profile') }}">My Profile</a>
+                                <hr class="hr-acount">
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="{{ url_for('auth.logout') }}">Log out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </header>
+    <section class="u-clearfix u-custom-color-1 u-section-1" id="sec-6f52">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <img class="u-image u-image-default u-image-1" src="static/images/submit/OBJECTS2.svg" alt=""
+                data-image-width="495" data-image-height="200">
+            <p class="u-custom-font u-font-georgia u-text u-text-default u-text-1">{{ form_title }}</p>
+            <div
+                class="u-align-center-xs u-border-3 u-border-palette-1-light-2 u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-radius-39 u-shape-round u-white u-group-1">
+                <div class="u-container-layout u-container-layout-1">
+                    <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-2"
+                        src="static/images/submit/Layer_1.svg" alt="" data-image-width="185" data-image-height="188">
+                    <p class="u-text u-text-default u-text-2"> You have successfully submit your answers!</p>
+                    <a href="{{ url_for('views.welcome') }}"
+                        class="u-border-none u-btn u-btn-round u-button-style u-custom-color-2 u-hover-palette-1-light-1 u-radius-50 u-btn-1">Go
+                        home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="u-align-center u-clearfix u-footer u-palette-1-light-1 u-footer" id="sec-4f31">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <p class="u-small-text u-text u-text-variant u-text-1"> All copyrights @Smart Developer</p>
+        </div>
+    </footer>
+</body>
+
+</html>

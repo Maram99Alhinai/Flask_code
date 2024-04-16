@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <title>My Profile</title>
+  <!-- icon-->
+  <link rel="icon" type="image/x-icon" href="static/images/Logo.svg">
+
+  <!-- css-->
+  <link rel="stylesheet" href="static/css/library-css/my-account.css" media="screen">
+  <link rel="stylesheet" href="static/css/my-account.css" media="screen">
+
+  <!-- js-->
+  <script class="u-script" type="text/javascript" src="static/js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="static/js/page.js" defer=""></script>
+
+  <!-- font-->
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+  <!-- cdn-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body data-path-to-root="./" data-include-products="false" class="u-body u-stick-footer u-xl-mode" data-lang="en">
+  <div class="header-bg">
+    <header class="u-clearfix u-header u-white u-header" id="sec-3136">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <span class="u-border-1 u-border-grey-5 u-file-icon u-grey-5 u-icon u-icon-circle u-icon-1"><img
+            src="{{ url_for('static', filename='images/view/3106773-55a68393.png') }}" alt="">
+        </span>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="SM">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+              href="#">
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1">
+              <li class="u-nav-item"><a
+                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                  href="{{ url_for('views.welcome') }}" style="padding: 10px 24px;">Home</a>
+              </li>
+              <li class="u-nav-item"><a
+                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                  href="{{ url_for('views.my_forms') }}" style="padding: 10px 23px 10px 24px;">My Forms</a>
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                      href="{{ url_for('views.welcome') }}">Home</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('views.my_forms') }}">My
+                      Forms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
+          src="{{ url_for('static', filename='images/view/Logo1.svg') }}" alt="" data-image-width="86"
+          data-image-height="34">
+        <div class="nav-container">
+          <ul class="nav-items">
+            <li class="nav-item nav-item-dropdown ">
+              <a class="dropdown-trigger u-text-black" href="#" style="text-decoration: none;">{{ user_first_name }}
+                <p class="icon2"> &#11206;</p>
+              </a>
+              <ul class="dropdown-menu rounded-4 ">
+                <li class="dropdown-menu-item u-text-black">
+                  <a href="{{ url_for('auth.my_profile') }}" class="u-text-black" style="text-decoration: none;">My
+                    Profile</a>
+                  <hr class="">
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="{{ url_for('auth.logout') }}" class="u-text-black" style="text-decoration: none;">Log out</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+  
+  <section class="u-clearfix u-custom-color-6 u-section-1" id="sec-e8f7">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <img class="custom-expanded u-image u-image-default u-image-1" src="static/images/my-account/OBJECTS2.svg" alt=""
+        data-image-width="495" data-image-height="200">
+      <div
+        class="u-border-2 u-border-grey-10 u-container-style u-expanded-width u-group u-radius-40 u-shape-round u-white u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <div class="custom-expanded data-layout-selected u-clearfix u-gutter-16 u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+              <div class="u-layout-col">
+                <div class="u-size-60">
+                  <div class="u-layout-row">
+                    <div class="u-container-style u-layout-cell u-left-cell u-size-27 u-layout-cell-1" src="">
+                      <div class="u-container-layout u-container-layout-2">
+                        <img class="custom-expanded u-image u-image-2" src="static/images/my-account/avatar.svg"
+                          data-image-width="161" data-image-height="161">
+                      </div>
+                    </div>
+                    <div
+                      class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-right-cell u-size-33 u-layout-cell-2">
+                      <div class="u-container-layout u-valign-top-sm u-valign-top-xs u-container-layout-3">
+                        <p class="u-text u-text-custom-color-1 u-text-1"> {{ user_first_name }}</p>
+                        <p class="u-text u-text-2">{{ user_email }}</p>
+                        <div class="u-clearfix u-group-elements u-group-elements-1">
+                          <p class="u-text u-text-custom-color-7 u-text-3">{{count}}</p>
+                          <p class="u-text u-text-custom-color-7 u-text-4">forms</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-form u-form-1">
+            <form method="POST" class="row g-3" id="myForm">
+              <div class="col-md-6">
+                <label for="fname" class="form-label">First Name</label>
+                <input type="text" pattern="[A-Za-z\s]+" class="form-control" style="border-radius: 50px;" id="fname"
+                  name="fname" value="{{ user_first_name }}">
+              </div>
+              <div class="col-md-6">
+                <label for="lname" class="form-label">Last name</label>
+                <input type="text" class="form-control" style="border-radius: 50px;" id="lname" name="lname"
+                  value="{{ user_last_name }}">
+              </div>
+              <div class="col-md-6">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" style="border-radius: 50px;" id="username" name="username"
+                  value="{{ user_username }}">
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" style="border-radius: 50px;" id="email" name="email"
+                  value="{{ user_email }}" readonly>
+              </div>
+              <div class="col-md-6">
+                <label for="gender" class="form-label">Gender</label>
+                <select id="gender" class="form-select" style="border-radius: 50px;" name="gender">
+                  <option value="Male" {% if user_gender=='Male' %}selected{% endif %}>Male</option>
+                  <option value="Female" {% if user_gender=='Female' %}selected{% endif %}>Female</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" style="border-radius: 50px;" id="age" name="age"
+                  value="{{ user_age }}">
+              </div>
+            </form>
+          </div>
+          <a href="{{ url_for('auth.forgot_password') }}"
+            class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-50 u-text-body-alt-color u-text-hover-white u-btn-2">Reset
+            password&nbsp;&nbsp;
+            <span class="u-file-icon u-icon u-text-white u-icon-1"><img
+                src="static/images/my-account/271226-a90f2e2e.png" alt=""></span>
+          </a>
+          <button id="saveButton"
+            class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-50 u-text-body-alt-color u-text-hover-white u-btn-3 save">Save</button>
+        </div>
+      </div>
+      <h2 class="u-align-left u-custom-font u-font-roboto-slab u-text u-text-default u-text-5">My Profile</h2>
+    </div>
+  </section>
+  <footer class="u-align-center u-border-2 u-border-custom-color-4 u-clearfix u-custom-color-4 u-footer u-footer"
+    id="sec-d10e">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-text u-text-default u-text-white u-text-1"> All copyrights @Smart Developer</p>
+    </div>
+  </footer>
+
+
+  <script src="static/js/profile.js"></script>
+</body>
+
+</html>
