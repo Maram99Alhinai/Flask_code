@@ -23,8 +23,7 @@ from .form import get_user_type, get_user_email
 
 
 auth = Blueprint('auth', __name__)
-atlas_connection_string = 'mongodb+srv://testflaskprojecttest:flasktest@cluster0.1u5lrml.mongodb.net/hasad'
-# client = MongoClient('localhost', 27017)
+atlas_connection_string = '*'
 client = MongoClient(atlas_connection_string)
 db = client['hasad']
 users_collection = db['users']
@@ -38,7 +37,7 @@ serializer = URLSafeTimedSerializer(SECRET_KEY)
 
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
-GOOGLE_CLIENT_ID = "802812107850-8g2l23v8sl0vbonu9q8h3mnnleaaj7bq.apps.googleusercontent.com"
+GOOGLE_CLIENT_ID = "*"
 client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
 
 flow = Flow.from_client_secrets_file(
@@ -73,7 +72,7 @@ def callback():
     flow.fetch_token(authorization_response=request.url)
 
     if not session["state"] == request.args["state"]:
-        abort(500)  # State does not match!
+        abort(500) 
 
     credentials = flow.credentials
     request_session = requests.session()
@@ -216,10 +215,10 @@ def forgot_password():
 
         if user:
             # Generate a password reset token
-            EMAIL="hasad@smart-developer.net"
-            PASSWORD="20Data24-hi"
+            EMAIL="*"
+            PASSWORD="*"
             
-            current_app.config['MAIL_SERVER'] = 'mail.smart-developer.net'
+            current_app.config['MAIL_SERVER'] = '*'
             current_app.config['MAIL_PORT'] = 465
             current_app.config['MAIL_USE_SSL'] = True
             current_app.config['MAIL_USE_TLS'] = False

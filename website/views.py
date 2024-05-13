@@ -12,7 +12,7 @@ import urllib.parse
 
 
 views = Blueprint('views', __name__)
-atlas_connection_string = 'mongodb+srv://testflaskprojecttest:flasktest@cluster0.1u5lrml.mongodb.net/hasad'
+atlas_connection_string = '*'
 # client = MongoClient('localhost', 27017)
 client = MongoClient(atlas_connection_string)
 db = client['hasad']

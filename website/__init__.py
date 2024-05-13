@@ -8,8 +8,8 @@ from flask_oauthlib.client import OAuth
 
 def create_app():
     app = Flask(__name__,static_folder='static')
-    app.config['SECRET_KEY'] = 'hjshjhdjah kjshkjdhjs'
-    app.config['MONGO_URI'] = 'mongodb+srv://testflaskprojecttest:flasktest@cluster0.1u5lrml.mongodb.net/hasad'
+    app.config['SECRET_KEY'] = '*'
+    app.config['MONGO_URI'] = '*'
     app.config['SESSION_TYPE'] = 'filesystem'
     mongo = PyMongo(app)
 

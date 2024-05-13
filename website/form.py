@@ -7,7 +7,7 @@ from itsdangerous import URLSafeTimedSerializer
 from flask_mail import Mail, Message
 
 
-atlas_connection_string = 'mongodb+srv://testflaskprojecttest:flasktest@cluster0.1u5lrml.mongodb.net/hasad'
+atlas_connection_string = '*'
 client = MongoClient(atlas_connection_string)
 db = client['hasad']
 users_collection = db['users']
@@ -15,7 +15,7 @@ googleUsers_collection = db['googleUsers']
 forms_collection = db['forms']
 questions_collection = db['Questions']
 Responders_collection = db['Responders']
-SECRET_KEY = 'hjshjhdjah kjshkjdhjs'
+SECRET_KEY = '*'
 mail = Mail()
 serializer = URLSafeTimedSerializer(SECRET_KEY)
 
@@ -140,10 +140,10 @@ def get_user_type():
 
 def send_form(id,*emails):
     # Generate a password reset token
-    EMAIL="hasad@smart-developer.net"
-    PASSWORD="20Data24-hi"
+    EMAIL="*"
+    PASSWORD="*"
             
-    current_app.config['MAIL_SERVER'] = 'mail.smart-developer.net'
+    current_app.config['MAIL_SERVER'] = '*'
     current_app.config['MAIL_PORT'] = 465
     current_app.config['MAIL_USE_SSL'] = True
     current_app.config['MAIL_USE_TLS'] = False
